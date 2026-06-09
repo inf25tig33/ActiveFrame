@@ -15,7 +15,7 @@ O ActiveFrame é um diário de saúde interativo que permite aos utilizadores ge
 
 | Registar Atividade Física | Diário Alimentar |
 | :---: | :---: |
-| ![Formulário de Atividades](doc/imagens/form-atividade.png) | ![Formulário de Alimentação](doc/imagens/form-refeicao.png) |
+| ![Formulário de Atividades](doc/imagens/form-atividades.png) | ![Formulário de Alimentação](doc/imagens/form-refeicao.png) |
 
 ## Tecnologias
 
