@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="activeframe">
+        <xs:complexType>
+            <xs:sequence>
+                
+                <xs:element name="atividades" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="atividade" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="utilizador_id" type="xs:integer"/>
+                                        <xs:element name="data" type="xs:date"/>
+                                        <xs:element name="tipo" type="xs:string"/>
+                                        <xs:element name="local" type="xs:string"/>
+                                        <xs:element name="distancia_tempo" type="xs:string"/>
+                                        <xs:element name="calorias" type="xs:integer"/>
+                                        <xs:element name="observacoes" type="xs:string"/>
+                                        <xs:element name="fotos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="foto" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="sugestoes_atividades" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="categoria" maxOccurs="unbounded" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="opcao" type="xs:string" maxOccurs="unbounded" minOccurs="1"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="nome" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="sugestoes_refeicoes" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="categoria" maxOccurs="unbounded" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="opcao" type="xs:string" maxOccurs="unbounded" minOccurs="1"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="nome" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="refeicoes" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="refeicao" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="utilizador_id" type="xs:integer"/>
+                                        <xs:element name="data" type="xs:date"/>
+                                        <xs:element name="tipo" type="xs:string"/>
+                                        <xs:element name="titulo" type="xs:string"/>
+                                        <xs:element name="foto_prato" type="xs:string"/>
+                                        <xs:element name="nutrientes">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="calorias" type="xs:string"/>
+                                                    <xs:element name="proteinas" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

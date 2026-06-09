@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "username": "luisalves",
+    "email": "a048579@umaia.pt",
+    "password": "password123"
+  },
+  {
+    "id": 2,
+    "username": "miguelfernandes",
+    "email": "a050287@umaia.pt",
+    "password": "password456"
+  }
+]

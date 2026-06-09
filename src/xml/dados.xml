@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<activeframe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="schema.xsd">
+
+    <atividades>
+        <atividade id="1">
+            <utilizador_id>1</utilizador_id>
+            <data>2026-06-01</data>
+            <tipo>Corrida</tipo>
+            <local>Parque da Cidade</local>
+            <distancia_tempo>5.0 Km / 30 min</distancia_tempo>
+            <calorias>350</calorias>
+            <observacoes>Treino matinal num ritmo estável.</observacoes>
+            <fotos>
+                <foto>imagens/treino-exemplo.jpg</foto>
+                <foto>imagens/treino-exemplo2.jpg</foto>
+            </fotos>
+        </atividade>
+        <atividade id="2">
+            <utilizador_id>1</utilizador_id>
+            <data>2026-06-02</data>
+            <tipo>Natação</tipo>
+            <local>Piscina Municipal</local>
+            <distancia_tempo>1.5 Km / 45 min</distancia_tempo>
+            <calorias>400</calorias>
+            <observacoes>Treino focado em técnica de bruços e respiração bilateral.</observacoes>
+            <fotos>
+                <foto>imagens/natacao1.jpg</foto>
+            </fotos>
+        </atividade>
+        <atividade id="3">
+            <utilizador_id>1</utilizador_id>
+            <data>2026-06-03</data>
+            <tipo>Caminhada</tipo>
+            <local>Serra de Sintra</local>
+            <distancia_tempo>8.0 Km / 120 min</distancia_tempo>
+            <calorias>310</calorias>
+            <observacoes>Percurso com desnível acentuado e vistas panorâmicas.</observacoes>
+            <fotos>
+                <foto>imagens/caminhada1.jpg</foto>
+            </fotos>
+        </atividade>
+
+        <atividade id="4">
+            <utilizador_id>2</utilizador_id>
+            <data>2026-06-01</data>
+            <tipo>Musculação</tipo>
+            <local>Fitness Factory</local>
+            <distancia_tempo>0.0 Km / 60 min</distancia_tempo>
+            <calorias>420</calorias>
+            <observacoes>Treino focado em pernas e ombros. Boa intensidade.</observacoes>
+            <fotos>
+                <foto>imagens/ginasio1.jpg</foto>
+            </fotos>
+        </atividade>
+        <atividade id="5">
+            <utilizador_id>2</utilizador_id>
+            <data>2026-06-02</data>
+            <tipo>Ciclismo</tipo>
+            <local>Ciclovia Principal</local>
+            <distancia_tempo>15.0 Km / 50 min</distancia_tempo>
+            <calorias>480</calorias>
+            <observacoes>Ritmo moderado com bastante vento contra no regresso.</observacoes>
+            <fotos>
+                <foto>imagens/ciclismo1.jpg</foto>
+            </fotos>
+        </atividade>
+        <atividade id="6">
+            <utilizador_id>2</utilizador_id>
+            <data>2026-06-03</data>
+            <tipo>Crossfit</tipo>
+            <local>Box Central</local>
+            <distancia_tempo>0.0 Km / 45 min</distancia_tempo>
+            <calorias>510</calorias>
+            <observacoes>WOD exigente com foco em levantamento olímpico e força.</observacoes>
+            <fotos>
+                <foto>imagens/crossfit1.jpg</foto>
+            </fotos>
+        </atividade>
+
+    </atividades>
+
+    <sugestoes_atividades>
+        <categoria nome="Ar Livre / Cardio">
+            <opcao>Ciclismo</opcao>
+            <opcao>Natação</opcao>
+            <opcao>Corrida</opcao>
+            <opcao>Caminhada</opcao>
+            <opcao>Futebol</opcao>
+        </categoria>
+        <categoria nome="Ginásio / Força">
+            <opcao>Musculação</opcao>
+            <opcao>Crossfit</opcao>
+        </categoria>
+    </sugestoes_atividades>
+
+    <sugestoes_refeicoes>
+        <categoria nome="Refeições Principais">
+            <opcao>Almoço</opcao>
+            <opcao>Jantar</opcao>
+        </categoria>
+        <categoria nome="Snacks e Lanches">
+            <opcao>Pequeno-almoço</opcao>
+            <opcao>Lanche</opcao>
+            <opcao>Seia</opcao>
+        </categoria>
+    </sugestoes_refeicoes>
+
+    <refeicoes>
+        <refeicao id="1">
+            <utilizador_id>1</utilizador_id>
+            <data>2026-06-01</data>
+            <tipo>Almoço</tipo>
+            <titulo>Taça Nutritiva de Frango</titulo>
+            <foto_prato>imagens/almoco-exemplo.jpg</foto_prato>
+            <nutrientes>
+                <calorias>Aproximadamente 520 kcal</calorias>
+                <proteinas>42g - Essencial para a recuperação muscular</proteinas>
+            </nutrientes>
+        </refeicao>
+        <refeicao id="2">
+            <utilizador_id>1</utilizador_id>
+            <data>2026-06-02</data>
+            <tipo>Jantar</tipo>
+            <titulo>Omelete de Claras com Espinafres</titulo>
+            <foto_prato>imagens/jantar1.jpg</foto_prato>
+            <nutrientes>
+                <calorias>Aproximadamente 290 kcal</calorias>
+                <proteinas>35g - Elevada biodisponibilidade</proteinas>
+            </nutrientes>
+        </refeicao>
+        <refeicao id="3">
+            <utilizador_id>1</utilizador_id>
+            <data>2026-06-03</data>
+            <tipo>Pequeno-almoço</tipo>
+            <titulo>Papas de Aveia com Banana e Canela</titulo>
+            <foto_prato>imagens/pequeno_almoco1.jpg</foto_prato>
+            <nutrientes>
+                <calorias>Aproximadamente 340 kcal</calorias>
+                <proteinas>12g - Fonte de energia matinal</proteinas>
+            </nutrientes>
+        </refeicao>
+
+        <refeicao id="4">
+            <utilizador_id>2</utilizador_id>
+            <data>2026-06-01</data>
+            <tipo>Almoço</tipo>
+            <titulo>Salmão Grelhado com Batata Doce</titulo>
+            <foto_prato>imagens/almoco2.jpg</foto_prato>
+            <nutrientes>
+                <calorias>Aproximadamente 610 kcal</calorias>
+                <proteinas>38g - Rico em ómega 3 de qualidade</proteinas>
+            </nutrientes>
+        </refeicao>
+        <refeicao id="5">
+            <utilizador_id>2</utilizador_id>
+            <data>2026-06-02</data>
+            <tipo>Lanche</tipo>
+            <titulo>Batido de Whey com Manteiga de Amendoim</titulo>
+            <foto_prato>imagens/lanche1.jpg</foto_prato>
+            <nutrientes>
+                <calorias>Aproximadamente 380 kcal</calorias>
+                <proteinas>30g - Ideal para o pós-treino imediato</proteinas>
+            </nutrientes>
+        </refeicao>
+        <refeicao id="6">
+            <utilizador_id>2</utilizador_id>
+            <data>2026-06-03</data>
+            <tipo>Jantar</tipo>
+            <titulo>Bife de Peru Grelhado com Arroz Basmati</titulo>
+            <foto_prato>imagens/jantar2.jpg</foto_prato>
+            <nutrientes>
+                <calorias>Aproximadamente 450 kcal</calorias>
+                <proteinas>40g - Proteína magra de fácil digestão</proteinas>
+            </nutrientes>
+        </refeicao>
+    </refeicoes>
+
+</activeframe>
