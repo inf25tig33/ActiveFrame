@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE html> <!-- Tipo de documento HTML5 -->
 
-<head>
+<html lang="pt"> <!-- Idioma da página -->
+
+<head> <!-- Configurações da página e importação dos ficheiros CSS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ActiveFrame - Alimentação</title>
+
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
 
 <body>
 
+    <!-- Cabeçalho principal da área privada -->
     <header class="cabecalho-principal">
+
+        <!-- Logótipo da aplicação -->
         <div class="logo">
             <a href="atividade_fisica.html">
                 <img src="imagens/logo.png" alt="ActiveFrame Logo" class="logo-img">
             </a>
         </div>
 
+        <!-- Menu de navegação entre atividade física e alimentação -->
         <nav class="menu-centro">
             <ul>
                 <li><a href="atividade_fisica.html">Atividade Física</a></li>
@@ -25,75 +31,134 @@
             </ul>
         </nav>
 
+        <!-- Área de sessão do utilizador -->
         <div class="botoes-form">
             <span id="nome-utilizador-topo"></span>
             <button id="btn-logout" onclick="fazerLogout()">Sair</button>
         </div>
+
     </header>
 
+    <!-- Conteúdo principal da página -->
     <main class="conteudo-principal">
+
+        <!-- Introdução ao diário alimentar -->
         <div class="introducao">
             <h1>Diário Alimentar</h1>
-            <p>Controla os teus pratos diários e monitoriza a ingestão de macronutrientes.</p>
+            <p>
+                Controla os teus pratos diários e monitoriza a ingestão
+                de macronutrientes.
+            </p>
         </div>
 
+        <!-- Formulário para registo de refeições -->
         <section class="zona-formulario">
+
             <h2 class="titulo-bloco">Registar Nova Refeição</h2>
+
             <form id="form-nova-refeicao" class="form-dados-input">
 
                 <div class="grupo-campos">
+
                     <div class="campo-input">
                         <label for="ref-tipo">Momento (Refeição):</label>
                         <select id="ref-tipo" required>
-                            <option value="" disabled selected>Selecione o momento</option>
+                            <option value="" disabled selected>
+                                Selecione o momento
+                            </option>
                         </select>
                     </div>
+
                     <div class="campo-input">
                         <label for="ref-data">Data:</label>
                         <input type="date" id="ref-data" required>
                     </div>
+
                     <div class="campo-input">
                         <label for="ref-titulo">Nome do Prato:</label>
-                        <input type="text" id="ref-titulo" placeholder="Ex: Salada de Atum e Quinoa" required>
+                        <input type="text"
+                               id="ref-titulo"
+                               placeholder="Ex: Salada de Atum e Quinoa"
+                               required>
                     </div>
+
                 </div>
 
                 <div class="grupo-campos">
+
                     <div class="campo-input">
                         <label for="ref-calorias">Calorias (kcal):</label>
-                        <input type="text" id="ref-calorias" placeholder="Ex: 450 kcal" required>
+                        <input type="text"
+                               id="ref-calorias"
+                               placeholder="Ex: 450 kcal"
+                               required>
                     </div>
+
                     <div class="campo-input">
                         <label for="ref-proteinas">Proteínas:</label>
-                        <input type="text" id="ref-proteinas" placeholder="Ex: 30g" required>
+                        <input type="text"
+                               id="ref-proteinas"
+                               placeholder="Ex: 30g"
+                               required>
                     </div>
+
                     <div class="campo-input">
-                        <label for="ref-foto">Escolha a Foto do Prato:</label>
-                        <input type="file" id="ref-foto" accept="image/*">
+                        <label for="ref-foto">
+                            Escolha a Foto do Prato:
+                        </label>
+                        <input type="file"
+                               id="ref-foto"
+                               accept="image/*">
                     </div>
+
                 </div>
 
-                <button type="submit" class="btn-guardar">Guardar Refeição</button>
+                <button type="submit" class="btn-guardar">
+                    Guardar Refeição
+                </button>
+
             </form>
+
         </section>
 
+        <!-- Área onde são apresentadas as refeições registadas -->
         <section class="zona-dados">
-            <h3 class="titulo-bloco">Controlo de Refeições & Nutrientes</h3>
+
+            <h3 class="titulo-bloco">
+                Controlo de Refeições & Nutrientes
+            </h3>
+
             <div id="contentor-refeicoes"></div>
+
         </section>
+
     </main>
 
+    <!-- Rodapé da página -->
     <footer class="rodape">
         <p>&copy; 2026 ActiveFrame - Grupo inf25tig33.</p>
     </footer>
 
-    <div id="modal-foto" class="modal-foto escondido" onclick="fecharModal()">
+    <!-- Janela modal utilizada para ampliar fotografias -->
+    <div id="modal-foto"
+         class="modal-foto escondido"
+         onclick="fecharModal()">
+
         <span class="fechar-modal">&times;</span>
-        <img class="conteudo-modal" id="img-modal" src="imagens/placeholder.jpg" alt="Foto em ponto grande">
+
+        <img class="conteudo-modal"
+             id="img-modal"
+             src="imagens/placeholder.jpg"
+             alt="Foto em ponto grande">
+
     </div>
 
+    <!-- Script responsável pela gestão das refeições -->
     <script src="js/alimentacao.js"></script>
+
+    <!-- Script com funções globais da aplicação -->
     <script src="js/global.js"></script>
+
 </body>
 
 </html>
