@@ -1,0 +1,165 @@
+/*variáveis globais de cor*/
+:root {
+    --cor-primaria: #88b94b;
+    --cor-primaria-hover: #70993d;
+
+    --texto-principal: #2d3138;
+    --texto-secundario: #59616b;
+    --texto-menu: #6f7680;
+
+    --borda: #d8dde1;
+    --borda-clara: #eef1f3;
+
+    --fundo: #ffffff;
+    --fundo-secundario: #f8faf7;
+}
+
+/*RESET*/
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--fundo-secundario);
+    color: #334155;
+}
+
+.escondido {
+    display: none;
+}
+
+/*menu principal*/
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--fundo);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+/*navegação do menu principal*/
+.menu-centro ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-centro a {
+    text-decoration: none;
+    color: var(--texto-menu);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.menu-centro a:hover {
+    color: var(--cor-primaria);
+}
+
+/*Botões de Login e Criar conta*/
+.botoes-form {
+    display: flex;
+    gap: 12px;
+    position: relative;
+}
+
+.botoes-form button {
+    padding: 9px 18px;
+    border: 1px solid var(--borda);
+    background-color: var(--fundo);
+    color: #334155;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.botoes-form button:hover,
+.botoes-form button.ativo {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    border-color: var(--cor-primaria);
+}
+
+/*conteudo principal*/
+.conteudo-principal {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.introducao h1 {
+    font-size: 32px;
+    color: var(--texto-principal);
+    margin-bottom: 20px;
+    font-weight: 750;
+}
+
+.introducao p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--texto-secundario);
+}
+
+/*zona do video*/
+.zona-video {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.video-apresentacao {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*Links externos*/
+.link-universidade {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.link-universidade:hover {
+    color: var(--cor-primaria-hover);
+}
+
+/*rodapé*/
+.rodape {
+    text-align: center;
+    margin-top: 80px;
+    padding: 24px;
+    color: #94a3b8;
+    font-size: 14px;
+    border-top: 1px solid var(--borda-clara);
+}
+
+/*responsividade global*/
+@media (max-width: 768px) {
+
+    .cabecalho-principal {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .menu-centro ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
