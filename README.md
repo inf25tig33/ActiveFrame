@@ -50,4 +50,4 @@ De forma a cumprir os critérios de avaliação, o projeto foi desenvolvido em *
 ## Equipa
 * João Diogo Moita Pinto — [@JPintoUmaia](https://github.com/JPintoUmaia)
 * Luis Fernando Oliveira Alves — [@a048579](https://github.com/a048579)
-* Miguel Fernandes — [@MiguelA050287](https://github.com/MiguelA050287)
+* Miguel Nuno da Costa Milheiro Fernandes — [@MiguelA050287](https://github.com/MiguelA050287)
