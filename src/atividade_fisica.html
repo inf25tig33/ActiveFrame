@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE html> <!-- Tipo de documento HTML5 -->
 
-<head>
+<html lang="pt"> <!-- Idioma da página -->
+
+<head> <!-- Configurações da página e importação dos ficheiros CSS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ActiveFrame - Atividade Física</title>
@@ -11,13 +12,17 @@
 
 <body>
 
+    <!-- Cabeçalho principal da área privada -->
     <header class="cabecalho-principal">
+
+        <!-- Logótipo da aplicação -->
         <div class="logo">
             <a href="atividade_fisica.html">
                 <img src="imagens/logo.png" alt="ActiveFrame Logo" class="logo-img">
             </a>
         </div>
 
+        <!-- Menu de navegação entre as áreas principais da aplicação -->
         <nav class="menu-centro">
             <ul>
                 <li><a href="atividade_fisica.html" class="link-ativo">Atividade Física</a></li>
@@ -25,79 +30,145 @@
             </ul>
         </nav>
 
+        <!-- Área de sessão do utilizador -->
         <div class="botoes-form">
             <span id="nome-utilizador-topo"></span>
             <button id="btn-logout" onclick="fazerLogout()">Sair</button>
         </div>
+
     </header>
 
+    <!-- Conteúdo principal da página -->
     <main class="conteudo-principal">
+
+        <!-- Mensagem de boas-vindas ao utilizador -->
         <div class="introducao">
             <h1>Olá, <span id="nome-utilizador-boas-vindas"></span>!</h1>
-            <p>Este é o teu espaço privado. Abaixo encontras o teu histórico de treinos e evolução física.</p>
+            <p>
+                Este é o teu espaço privado. Abaixo encontras o teu
+                histórico de treinos e evolução física.
+            </p>
         </div>
 
+        <!-- Formulário para registo de novas atividades físicas -->
         <section class="zona-formulario">
+
             <h2 class="titulo-bloco">Registar Nova Atividade</h2>
+
             <form id="form-nova-atividade" class="form-dados-input">
+
                 <div class="grupo-campos">
+
                     <div class="campo-input">
                         <label for="act-tipo">Tipo de Exercício:</label>
                         <select id="act-tipo" required>
-                            <option value="" disabled selected>Selecione um desporto</option>
+                            <option value="" disabled selected>
+                                Selecione um desporto
+                            </option>
                         </select>
                     </div>
+
                     <div class="campo-input">
                         <label for="act-data">Data:</label>
                         <input type="date" id="act-data" required>
                     </div>
+
                     <div class="campo-input">
                         <label for="act-local">Local:</label>
-                        <input type="text" id="act-local" placeholder="Ex: Parque, Ginásio" required>
+                        <input type="text" id="act-local"
+                            placeholder="Ex: Parque, Ginásio" required>
                     </div>
+
                 </div>
 
                 <div class="grupo-campos">
+
                     <div class="campo-input">
-                        <label for="act-metricas">Métricas (Distância / Tempo):</label>
-                        <input type="text" id="act-metricas" placeholder="Ex: 5.0 Km / 30 min" required>
+                        <label for="act-metricas">
+                            Métricas (Distância / Tempo):
+                        </label>
+                        <input type="text" id="act-metricas"
+                            placeholder="Ex: 5.0 Km / 30 min" required>
                     </div>
+
                     <div class="campo-input">
-                        <label for="act-calorias">Calorias Gastas (kcal):</label>
-                        <input type="number" id="act-calorias" placeholder="Ex: 350" required>
+                        <label for="act-calorias">
+                            Calorias Gastas (kcal):
+                        </label>
+                        <input type="number" id="act-calorias"
+                            placeholder="Ex: 350" required>
                     </div>
+
                     <div class="campo-input">
-                        <label for="act-foto">Fotografia do Treino:</label>
-                        <input type="file" id="act-foto" accept="image/*">
+                        <label for="act-foto">
+                            Fotografia do Treino:
+                        </label>
+                        <input type="file" id="act-foto"
+                            accept="image/*">
                     </div>
+
                 </div>
 
                 <div class="campo-input-total">
-                    <label for="act-notas">Observações / Notas:</label>
-                    <textarea id="act-notas" placeholder="Como correu o treino?" rows="3" required></textarea>
+
+                    <label for="act-notas">
+                        Observações / Notas:
+                    </label>
+
+                    <textarea id="act-notas"
+                        placeholder="Como correu o treino?"
+                        rows="3"
+                        required>
+                    </textarea>
+
                 </div>
 
-                <button type="submit" class="btn-guardar">Guardar Registo</button>
+                <button type="submit" class="btn-guardar">
+                    Guardar Registo
+                </button>
+
             </form>
+
         </section>
 
+        <!-- Área onde são apresentadas as atividades registadas -->
         <section class="zona-dados">
-            <h3 class="titulo-bloco">Registo de Atividades Físicas</h3>
+
+            <h3 class="titulo-bloco">
+                Registo de Atividades Físicas
+            </h3>
+
             <div id="contentor-atividades"></div>
+
         </section>
+
     </main>
 
+    <!-- Rodapé da página -->
     <footer class="rodape">
         <p>&copy; 2026 ActiveFrame - Grupo inf25tig33.</p>
     </footer>
 
-    <div id="modal-foto" class="modal-foto escondido" onclick="fecharModal()">
+    <!-- Janela modal utilizada para ampliar fotografias -->
+    <div id="modal-foto"
+         class="modal-foto escondido"
+         onclick="fecharModal()">
+
         <span class="fechar-modal">&times;</span>
-        <img class="conteudo-modal" id="img-modal" src="imagens/placeholder.jpg" alt="Foto em ponto grande">
+
+        <img class="conteudo-modal"
+             id="img-modal"
+             src="imagens/placeholder.jpg"
+             alt="Foto em ponto grande">
+
     </div>
 
+    <!-- Script responsável pela gestão das atividades físicas -->
     <script src="js/atividade_fisica.js"></script>
+
+    <!-- Script com funções globais da aplicação -->
     <script src="js/global.js"></script>
+
 </body>
 
 </html>
