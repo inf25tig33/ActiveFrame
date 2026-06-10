@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE html> <!-- Tipo de documento HTML5 -->
 
-<head>
+<html lang="pt"> <!-- Idioma da página -->
+
+<head> <!-- Configurações da página e importação dos ficheiros CSS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ActiveFrame - Diário de Treinos</title>
@@ -11,14 +12,17 @@
 
 <body>
 
+    <!-- Cabeçalho principal da aplicação -->
     <header class="cabecalho-principal">
 
+        <!-- Logótipo da aplicação -->
         <div class="logo">
             <a href="index.html">
                 <img src="imagens/logo.png" alt="ActiveFrame Logo" class="logo-img">
             </a>
         </div>
 
+        <!-- Menu de navegação principal -->
         <nav class="menu-centro">
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -26,40 +30,62 @@
             </ul>
         </nav>
 
+        <!-- Área de autenticação (login e registo) -->
         <div class="botoes-form">
+
             <button id="btn-login" onclick="mostrarLogin()">Entrar</button>
             <button id="btn-registo" onclick="mostrarRegisto()">Criar Conta</button>
 
             <div class="form-container">
 
+                <!-- Formulário de login -->
                 <form id="form-login" class="form-autenticar escondido">
+
                     <h3>Aceder à tua Conta</h3>
+
                     <div class="campo">
                         <label for="login-user">Utilizador:</label>
-                        <input type="text" id="login-user" placeholder="Introduza o seu utilizador">
+                        <input type="text" id="login-user"
+                            placeholder="Introduza o seu utilizador">
                     </div>
+
                     <div class="campo">
                         <label for="login-pass">Palavra-passe:</label>
-                        <input type="password" id="login-pass" placeholder="Introduza a sua password">
+                        <input type="password" id="login-pass"
+                            placeholder="Introduza a sua password">
                     </div>
+
                     <button type="submit" class="btn-submeter">Entrar</button>
+
                 </form>
 
+                <!-- Formulário de registo -->
                 <form id="form-registo" class="form-autenticar escondido">
+
                     <h3>Registar Nova Conta</h3>
+
                     <div class="campo">
                         <label for="registo-user">Escolha o Utilizador:</label>
-                        <input type="text" id="registo-user" placeholder="Ex: OCorredor">
+                        <input type="text" id="registo-user"
+                            placeholder="Ex: OCorredor">
                     </div>
+
                     <div class="campo">
                         <label for="registo-email">Email:</label>
-                        <input type="email" id="registo-email" placeholder="Ex: a050079@umaia.pt">
+                        <input type="email" id="registo-email"
+                            placeholder="Ex: a050079@umaia.pt">
                     </div>
+
                     <div class="campo">
                         <label for="registo-pass">Palavra-passe:</label>
-                        <input type="password" id="registo-pass" placeholder="Mínimo 6 caracteres">
+                        <input type="password" id="registo-pass"
+                            placeholder="Mínimo 6 caracteres">
                     </div>
-                    <button type="submit" class="btn-submeter">Criar Conta</button>
+
+                    <button type="submit" class="btn-submeter">
+                        Criar Conta
+                    </button>
+
                 </form>
 
             </div>
@@ -67,29 +93,49 @@
 
     </header>
 
+    <!-- Conteúdo principal da página inicial -->
     <main class="conteudo-principal">
 
+        <!-- Apresentação do projeto -->
         <div class="introducao">
+
             <h1>Regista. Acompanha. Evolui.</h1>
-            <p>O ActiveFrame é o teu diário multimédia digital focado no teu bem-estar. Aqui podes monitorizar os teus
-                treinos e controlar a tua alimentação, utilizando a fotografia como elemento central da tua evolução.
+
+            <p>
+                O ActiveFrame é o teu diário multimédia digital focado
+                no teu bem-estar. Aqui podes monitorizar os teus treinos
+                e controlar a tua alimentação, utilizando a fotografia
+                como elemento central da tua evolução.
             </p>
+
         </div>
 
+        <!-- Vídeo de apresentação da aplicação -->
         <div class="zona-video">
-            <video controls poster="imagens/logototal.png" class="video-apresentacao">
-                <source src="imagens/video-index.mp4" type="video/mp4">
+
+            <video controls
+                   poster="imagens/logototal.png"
+                   class="video-apresentacao">
+
+                <source src="imagens/video-index.mp4"
+                        type="video/mp4">
+
                 O teu navegador não suporta a reprodução de vídeos HTML5.
+
             </video>
+
         </div>
 
     </main>
 
+    <!-- Rodapé da página -->
     <footer class="rodape">
         <p>&copy; 2026 ActiveFrame - Grupo inf25tig33.</p>
     </footer>
 
+    <!-- Script responsável pela autenticação -->
     <script src="js/auth.js"></script>
+
 </body>
 
 </html>
