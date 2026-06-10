@@ -45,7 +45,7 @@ De forma a cumprir os critérios de avaliação, o projeto foi desenvolvido em *
 * Capítulo 4: [Apresentação](doc/c4.md)
 
 ### Link da aplicação
-* (https://inf25tig33.netlify.app/)
+* https://inf25tig33.netlify.app/
 
 ## Equipa
 * João Diogo Moita Pinto — [@JPintoUmaia](https://github.com/JPintoUmaia)
