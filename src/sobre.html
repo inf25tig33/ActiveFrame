@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
+<!DOCTYPE html> <!-- Tipo de documento HTML5 -->
+
+<html lang="pt"> <!-- Idioma da página -->
+
+<head> <!-- Configurações da página e importação dos ficheiros CSS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ActiveFrame - Sobre o Projeto</title>
@@ -8,16 +10,20 @@
     <link rel="stylesheet" href="css/auth.css">
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
+
 <body>
 
+    <!-- Cabeçalho principal da aplicação -->
     <header class="cabecalho-principal">
         
+        <!-- Logótipo da aplicação -->
         <div class="logo">
             <a href="index.html">
                 <img src="imagens/logo.png" alt="ActiveFrame Logo" class="logo-img">
             </a>
         </div>
 
+        <!-- Menu de navegação principal -->
         <nav class="menu-centro">
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -25,62 +31,93 @@
             </ul>
         </nav>
 
+        <!-- Área de autenticação (login e registo) -->
         <div class="botoes-form">
             <button id="btn-login" onclick="mostrarLogin()">Entrar</button>
             <button id="btn-registo" onclick="mostrarRegisto()">Criar Conta</button>
 
             <div class="form-container">
+
+                <!-- Formulário de login -->
                 <form id="form-login" class="form-autenticar escondido">
                     <h3>Aceder à tua Conta</h3>
+
                     <div class="campo">
                         <label for="login-user">Utilizador:</label>
                         <input type="text" id="login-user" placeholder="Introduza o seu utilizador">
                     </div>
+
                     <div class="campo">
                         <label for="login-pass">Palavra-passe:</label>
                         <input type="password" id="login-pass" placeholder="Introduza a sua password">
                     </div>
+
                     <button type="submit" class="btn-submeter">Entrar</button>
                 </form>
 
+                <!-- Formulário de registo -->
                 <form id="form-registo" class="form-autenticar escondido">
                     <h3>Registar Nova Conta</h3>
+
                     <div class="campo">
                         <label for="registo-user">Escolha o Utilizador:</label>
                         <input type="text" id="registo-user" placeholder="Ex: OCorredor">
                     </div>
+
                     <div class="campo">
                         <label for="registo-email">Email:</label>
                         <input type="email" id="registo-email" placeholder="Ex: a050079@umaia.pt">
                     </div>
+
                     <div class="campo">
                         <label for="registo-pass">Palavra-passe:</label>
                         <input type="password" id="registo-pass" placeholder="Mínimo 6 caracteres">
                     </div>
+
                     <button type="submit" class="btn-submeter">Criar Conta</button>
                 </form>
+
             </div>
         </div>
     </header>
 
+    <!-- Conteúdo principal da página -->
     <main class="conteudo-principal">
         
+        <!-- Apresentação do projeto e contexto académico -->
         <div class="introducao">
             <h1>Sobre o ActiveFrame</h1>
-            <p>O projeto foi desenvolvido no âmbito da disciplina de <strong>Tecnologias da Internet</strong> na <a href="https://www.umaia.pt" target="_blank" rel="noopener noreferrer" class="link-universidade">Universidade da Maia</a>, com o propósito de criar uma plataforma intuitiva que foge aos diários de treino convencionais. Focamo-nos na evolução visual combinada com métricas de saúde.</p>
+
+            <p>
+                O projeto foi desenvolvido no âmbito da disciplina de
+                Tecnologias da Internet na Universidade da Maia,
+                com o objetivo de criar uma plataforma de acompanhamento
+                da evolução física e alimentar dos utilizadores.
+            </p>
         </div>
 
+        <!-- Secção que descreve o propósito e diferenciação da aplicação -->
         <section class="bloco-sobre">
+
             <h2>O Nosso Propósito</h2>
-            <p>Monitores de fitness normais dão-te gráficos e tabelas frias. O ActiveFrame cruza os teus dados de treino e nutrição diretamente com uma timeline fotográfica privada. Assim, consegues associar como te sentes e o que comes à tua transformação física real, dia após dia.</p>
+
+            <p>
+                O ActiveFrame combina dados de treino, alimentação
+                e registos fotográficos para permitir uma análise
+                mais visual e intuitiva da evolução do utilizador.
+            </p>
+
         </section>
 
     </main>
 
+    <!-- Rodapé da página -->
     <footer class="rodape">
         <p>&copy; 2026 ActiveFrame - Grupo inf25tig33.</p>
     </footer>
 
+    <!-- Script responsável pela autenticação -->
     <script src="js/auth.js"></script>
+
 </body>
 </html>
